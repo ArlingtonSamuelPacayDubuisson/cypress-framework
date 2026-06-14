@@ -1,0 +1,27 @@
+{
+  "name": "cypress-framework",
+  "version": "1.0.0",
+  "description": "Framework de automatización E2E y API con Cypress, Page Objects y ejecución en Docker.",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:e2e": "cypress run --spec 'cypress/e2e/**/*.cy.ts'",
+    "cy:api": "cypress run --spec 'cypress/e2e/api/**/*.cy.ts'",
+    "test": "cypress run"
+  },
+  "keywords": [
+    "cypress",
+    "automation",
+    "e2e",
+    "api-testing",
+    "qa",
+    "typescript",
+    "docker"
+  ],
+  "author": "Arlington Samuel Pacay Dubuisson",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^13.13.0",
+    "typescript": "^5.5.3"
+  }
+}

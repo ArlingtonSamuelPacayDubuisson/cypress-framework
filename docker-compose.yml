@@ -1,0 +1,11 @@
+services:
+  cypress:
+    build: .
+    image: cypress-framework:local
+    environment:
+      # Permite sobreescribir la baseUrl sin tocar el código.
+      - CYPRESS_baseUrl=https://www.saucedemo.com
+    volumes:
+      # Persiste videos y screenshots de la corrida en el host.
+      - ./cypress/videos:/e2e/cypress/videos
+      - ./cypress/screenshots:/e2e/cypress/screenshots
